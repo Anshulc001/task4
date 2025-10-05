@@ -7,24 +7,186 @@
 
 /* Make html and body full-viewport size */
 html, body {
-  height: 100%;
+  height: 100%; /* Ensure the parent containers have a defined height */
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+}
+
+#main {
+  height: 100%; /* Parent container for all sections */
   width: 100%;
 }
 
 #nav{
-   background-color: #1d1d1f;
+   background-color: rgba(29, 29, 31, 0.96); /* Add background with minimum opacity */
    width: 100%;
    height: 60px;
    display: flex;
    justify-content: center;
   align-items: center;
-  gap: 14px;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+
+}
+
+#nav i{
+  font-size:20px;
 }
 #nav a{
   text-decoration:none;
   color: whitesmoke;
+  padding: 12px 8px;
+  font-size:small;
+  font-weight: 100;
+
+}
+
+#FirstOne, #Secoundone, #ThirdOne {
+  height: 85%; /* Ensure this works with the parent's height */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+#FirstOne{
+  background-image: url("https://www.apple.com/v/home/ch/images/heroes/iphone-17-pro/hero_iphone_17_pro__bknyzxfk2agi_large_2x.jpg"); 
+}
+.BODY h1{
+  color: white;
+  font-size: 60px;
+  padding-top: 60px;
+}
+.BODY h3{
+  color: white;
+  font-size: 30px;
+  margin-top: 14px;
+  font-weight: 400;
+}
+.button1{
+  background-color: #0077ed;
+  color: white;
+  border: none;
   padding: 12px 20px;
-  font-size: large;
+  margin-top: 16px;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.button2_1st {
+  background-color: transparent; /* No color by default */
+  color: white;
+  border: 2px solid #0077ed; /* Optional: Add a border for visibility */
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+
+}
+
+.button2_1st:hover {
+  background-color: #0077ed; /* Same color as button1 on hover */
+  color: white; /* Ensure text remains visible */
+}
+
+.button2_2nd {
+  background-color: transparent; /* No color by default */
+  color: #0077ed;
+  border: 2px solid #0077ed; /* Optional: Add a border for visibility */
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+
+}
+
+.button2_2nd:hover {
+  background-color: #0077ed; /* Same color as button1 on hover */
+  color: white; /* Ensure text remains visible */
+}
+
+#Secoundone{
+  background-image: url("https://www.apple.com/v/home/ch/images/heroes/iphone-air/hero_iphone_air__0gxyavihpiqu_large.jpg"); 
+}
+#Secoundone h1, #ThirdOne h1, #fourthone h1, #fifthone h1, #seventhone h1, #Eightone h1, #Nineone h1 {
+  color: black;
+  font-size: 60px;
+  padding-top: 60px;
+}
+#sixthone h1{
+  color: whitesmoke;
+  font-size: 60px;
+  padding-top: 60px;
+}
+
+#Secoundone h3, #ThirdOne h3, #fourthone h3, #fifthone h3, #seventhone h3, #Eightone h3, #Nineone h3 {
+  color: black;
+  font-size: 30px;
+  margin-top: 14px;
+  font-weight: 400;
+}
+#sixthone h3{
+  color: whitesmoke;
+  font-size: 30px;
+  /* margin-top: 14px; */
+  font-weight: 400;
+}
+#sixthone{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Move content to the bottom */
+  align-items: center; /* Center horizontally */
+}
+ #sixthone button {
+  margin-bottom: 100px; /* Add spacing from the bottom */
+}
+#sixthone h1, #sixthone h3{
+  margin-bottom: 16px;
+}
+
+#ThirdOne{
+  background-image: url("https://www.apple.com/v/home/ch/images/heroes/iphone-17/hero_iphone_17__c5vvimu9a20y_large.jpg"); 
 }
 
 
+#flex1
+{
+  display: flex; /* Align items in a row */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  height: 100%; /* Ensure this works with the parent's height */
+  width: 100%;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center;
+}
+#fourthone, #fifthone, #sixthone,#seventhone, #Eightone, #Nineone {
+  height: 80%; /* Ensure this works with the parent's height */
+  width: 49%;
+  background-size: cover;
+  background-position: center;
+  text-align: center; /* Optional: Add a background color with transparency */
+}
+#fourthone{
+  background-image: url("https://www.apple.com/v/home/ch/images/promos/apple-watch-series-11/promo_apple_watch_series_11__b63hxviqvonm_large.jpg");
+  
+}
+#fifthone{
+  background-image: url("https://www.apple.com/v/home/ch/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_large.jpg");
+}
+
+#sixthone{
+  background-image: url("https://www.apple.com/v/home/ch/images/promos/education/promo_edu__efkxh2h1luoi_large.jpg");
+}
+
+#seventhone{
+  background-image: url("https://www.apple.com/v/home/ch/images/promos/macbook-air/promo_macbook_air__fqowrtnxewqe_large.jpg");
+}
+#Eightone{
+  background-image: url("https://www.apple.com/v/home/ch/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg");
+}
+#Nineone{
+  background-image: url("https://www.apple.com/v/home/ch/images/promos/apple-card/promo_apple_card__5cm7draujpey_large.jpg");
+}
